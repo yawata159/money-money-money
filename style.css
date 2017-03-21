@@ -1,0 +1,64 @@
+body {
+    font-family:sans-serif;
+}
+.years {
+    overflow:hidden;
+    list-style-type:none;
+    padding:0;
+}
+.years li {
+    float:left;
+    margin:0 5px 0 0;
+    width:100px;
+    height:40px;
+    position:relative;
+}
+.years label, .years input {
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+}
+.years input[type="radio"] {
+    opacity:0.011;
+    z-index:100;
+}
+.years input[type="radio"]:checked + label {
+    background:#CCC;
+}
+.years label {
+    padding:5px;
+
+    border:1px solid #CCC;
+    cursor:pointer;
+    z-index:90;
+}
+.years label:hover {
+    background:#DDD;
+}
+.centerall {
+    display:flex;
+    height:100%;
+    width:100%;
+    justify-content:center;
+    align-items:center;
+}
+#revenue, #spending {
+    display:flex;
+    flex-direction:column;
+}
+#revenue div, #spending div {
+    line-height:30px; 
+    text-align: right;
+    background-color: #34495e;
+    color:white;
+    height:30px;
+    margin:5px;
+    padding-right: 5px;
+}
+#revenue span {
+    display:inline-block;
+}
+

@@ -4,18 +4,50 @@
         <title>Money Money Money</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <style>
-            .chart div {
-                background-color:blue;
-                text-align:right;
-                padding:3px;
-                margin:1px;
-                color:white;
-            }
+            #revenue div, #spending div {width:0;}
         </style>
-
     </head>
     <body>
-        <div class="chart" id="dynamic"></div>
+        <p>Hover over the bars for more details</p>
+        <p>Pick a year:</p>
+        <ul class="years">
+            <li>
+                <input type="radio" id="y2008" name="year"/>
+                <label for="y2008">
+                    <div class="centerall">2008</div>
+                </label>
+            </li>
+            <li>
+                <input type="radio" id="y2009" name="year"/>
+                <label for="y2009">
+                    <div class="centerall">2009</div>
+                </label>
+            </li>
+        </ul>
+        <div>
+            <h2>Revenue<span id="rev_title"></span></h2>
+            <div id="revenue" >
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <h2>Spending<span id="spnd_title"></span></h2>
+            <div id="spending">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
         <script src="https://d3js.org/d3.v3.min.js"></script>
         <script src="script.js"></script>
     </body>
